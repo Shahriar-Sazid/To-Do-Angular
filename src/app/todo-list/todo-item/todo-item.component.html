@@ -1,0 +1,25 @@
+<div class="todo_item">
+  <div class="button-block">
+    <button type="button" (click)="onTick()">
+      <i class="mark x" *ngIf="todoItem.completed"></i>
+      <i class="mark xx" *ngIf="todoItem.completed"></i>
+    </button>
+  </div>
+  &nbsp;
+
+  <span
+    #todoSpan
+    contenteditable="true"
+    (click)="selectElementContents(todoSpan)"
+    (blur)="onUpdate(todoSpan)"
+    (keydown.enter)="onUpdate(todoSpan)"
+    >{{ todoItem.text.trim() }}</span
+  >
+
+  <div class="button-block" id="cancel-block">
+    <button type="button" (click)="onDelete.emit(todoItem)">
+      <i class="mark y"></i>
+      <i class="mark yy"></i>
+    </button>
+  </div>
+</div>

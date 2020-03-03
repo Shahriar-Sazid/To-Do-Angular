@@ -1,0 +1,14 @@
+<div id="todo_input">
+  <form id="todo_input_form">
+    <span style="margin: 10px; color:darkgray;"
+      ><i class="fas fa-chevron-down"></i>
+    </span>
+    <input
+      #todo_input_elem
+      (keyup.enter)="onInput(todo_input_elem.value)"
+      style="border: none;"
+      type="text"
+      placeholder="What needs to be done?"
+    />
+  </form>
+</div>

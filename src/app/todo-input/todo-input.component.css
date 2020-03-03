@@ -1,0 +1,27 @@
+#todo_input {
+  width: 550px;
+  height: 55px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+#todo_input_form > input:focus {
+  outline: none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+}
+
+#todo_input_form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#todo_input_form > input {
+  flex-grow: 1 !important;
+  font-size: x-large;
+}
